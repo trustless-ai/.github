@@ -12,19 +12,19 @@ independently checkable from public data — a stranger can re-derive it without
 Each layer defends one invariant and hands a reference to the next. The whole chain re-verifies
 from public data.
 
-| Link | Invariant it defends | Lives in |
-|---|---|---|
-| **agreement** | the parties agreed to this, on these terms | project repo |
-| **identity** | the agent is who it claims to be | `agent-ercs` |
-| **dispatch** | the task reached the agent it was meant for | `agent-ercs` |
-| **provenance** | the inputs/outputs are committed and intact | `agent-ercs` |
-| **verify** | the verdict was committed, intact, by the claimed key | `agent-sdk` |
-| **anchor** | the commitment existed *before* its outcome (PoW precedence) | `agent-sdk` |
-| **eligibility** | the actor was permitted to act | `agent-ercs` |
-| **settlement** | the outcome settled on a public, non-editable account | project repo |
-| **reputation** | standing is a deterministic function of public settled outcomes | `agent-sdk` |
+| Link | Invariant it defends | Lives in | ERC pin |
+|---|---|---|---|
+| **agreement** | the parties agreed to this, on these terms | project repo | ERC-8001 (Agent Coordination Framework) |
+| **identity** | the agent is who it claims to be | `agent-ercs` | ERC-8004 (Trustless Agents) |
+| **dispatch** | the task reached the agent it was meant for | `agent-ercs` | ERC-8301 (AgentTask) |
+| **provenance** | the inputs/outputs are committed and intact | `agent-ercs` | ERC-8281 / OCP + ERC-8299 (WYRIWE) |
+| **verify** | the verdict was committed, intact, by the claimed key | `agent-sdk` | ERC-8274 |
+| **anchor** | the commitment existed *before* its outcome (PoW precedence) | `agent-sdk` | ERC-8263 (TruthAnchorV1) + Bitcoin OTS |
+| **eligibility** | the actor was permitted to act | `agent-ercs` | ReceiptOS |
+| **settlement** | the outcome settled on a public, non-editable account | project repo | ERC-8275 (settlement axis) |
+| **reputation** | standing is a deterministic function of public settled outcomes | `agent-sdk` | ERC-8275 (reputation axis) |
 
-*(Chain order per the Composition Note; exact ERC references pinned there.)*
+*(Chain order + ERC pins per the [Composition Note](https://ethereum-magicians.org/t/composition-note-agent-service-consultation-flow-composing-the-agent-ercs-8004-8263-8274-8275-8281-8299-8301-informational/28833). Each pin names the spec that defends the link; some are filed PRs (8004/8001 in-repo, 8275/8299/8309 open), others pre-PR.)*
 
 ## Repos
 
