@@ -42,6 +42,11 @@ from public data.
     sync, signed records, on-chain attestation); reference impl of the *Gateway Mesh Sync Protocol*
     ERC. *Verify:* recompute any attestation trustlessly via the live `WyriweProofVerifier` (ERC-8274,
     Sepolia) — no node in the loop.
+  - **[`hack-ens-recovery`](https://github.com/TMerlini/hack-ens-recovery)** — owner-bound, verifiable
+    recovery agent: WYRIWE commit-before-outcome receipt → on-chain BIP-340 verify (no oracle) →
+    owner-bound escrow with a replay nullifier. Composes 8004/8263/8274/8275/8281/8299/8301 on a real
+    use case. *Verify:* `cd contracts && forge test` (incl. all 15 official BIP-340 vectors); live on
+    Sepolia, full fee-release proven on-chain. `BIP340.sol` flagged pre-mainnet-audit.
 
 ## The one rule
 
