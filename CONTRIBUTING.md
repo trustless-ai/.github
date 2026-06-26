@@ -1,5 +1,5 @@
 
-# Contributing to onchain-ai
+# Contributing to trustless-ai
 
 This org exists to make one promise true: **every claim here is independently checkable from
 public data, without trusting anyone.** These conventions exist to keep that promise enforceable as

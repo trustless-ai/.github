@@ -1,7 +1,7 @@
      The boundary-chain rows below carry the INVARIANT + repo home; exact ERC pins come from
      Merlini's Composition Note (offered as the seed for this map) so we don't misattribute numbers. -->
 
-# onchain-ai
+# trustless-ai
 
 A neutral, open-source home for the standards, reference implementations, and live proofs at the
 intersection of **AI agents and blockchain**. The defining promise: **every claim here is
@@ -28,12 +28,12 @@ from public data.
 
 ## Repos
 
-- **[`.github`](https://github.com/onchain-ai/.github)** — this front door: boundary-chain map,
+- **[`.github`](https://github.com/trustless-ai/.github)** — this front door: boundary-chain map,
   contribution guide, community health files.
 - **`agent-ercs`** — production-grade, versioned, audited ERC contracts. The shared **on-chain**
   dependency you import and pin. Think OpenZeppelin for AI-agent infrastructure.
 - **`agent-sdk`** — the shared **off-chain** verify/recompute tooling. One
-  `npm install @onchain-ai/agent-sdk`, one consistent API to check every layer's claims. A thin,
+  `npm install @trustless-ai/agent-sdk`, one consistent API to check every layer's claims. A thin,
   transparent wrapper over zero-dependency recompute scripts that remain the trust anchor.
 - **`agent-contracts-examples`** — minimal, runnable quickstarts using `agent-ercs` + `agent-sdk`.
 - **Project repos** — `ccip-router`, `ConsultEscrow`, and whatever each layer author brings: the
