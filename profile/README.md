@@ -1,13 +1,35 @@
-     The boundary-chain rows below carry the INVARIANT + repo home; exact ERC pins come from
-     Merlini's Composition Note (offered as the seed for this map) so we don't misattribute numbers. -->
+
+
+
 
 # trustless-ai
 
-A neutral, open-source home for the standards, reference implementations, and live proofs at the
-intersection of **AI agents and blockchain**. The defining promise: **every claim here is
-independently checkable from public data — a stranger can re-derive it without trusting anyone.**
+**Let's build trustless AI — for everyone!**
 
-## The boundary chain
+A powerful, decentralized AI infrastructure that anyone can provide, anyone can use, and everyone can verify by recomputing the proof — **owned by no one**.
+
+
+<img width="3277" height="1279" alt="15064d45e970cdf0bae9c174d70de382" src="https://github.com/user-attachments/assets/76710d7f-4207-45ff-bca4-74fc88610932" />
+
+AI multiplies human capability. But as it advances, the strongest models may soon belong to a few — serving only their owners, closed to the public. The owners' advantage compounds, while the public falls further behind. This is the **AI model monopoly**. The best AI shouldn't belong to the few. It should belong to everyone.
+
+## Here's how we can build it
+
+1. **Everyone can provide** — anyone can contribute specialized models, specialized tools, or inference compute, and **composing** this diversity makes the whole more powerful than any single provider.
+
+2. **Everyone can use** — access is **decentralized**: no gatekeeper to approve, no platform able to block. Anyone can reach the best AI directly, and open competition keeps quality up and cost down.
+
+3. **Everyone can recompute and verify** — every result is **trustless**: through ERC standards, an agent SDK, and MCP tools, anyone can *recompute* it from public data, so "verified" has one shared definition — backed by proof, not by any brand.
+
+## Let's build it — with talents and believers
+
+- **Say hi on [Telegram](#)** — brainstorm, share ideas, and meet like-minded builders. No commitment needed — just come chat.
+- **Grow with a project** — follow one that interests you, learn as it evolves, and step in whenever ready: open an issue, spot a bug, send a PR. Every contribution counts, and we'll review and respond as fast as we can.
+- **Start your own** — have an idea that fits the vision? We'll create a repo under the org and hand you full control. Your project, your lead — we're here to support.
+
+## What's in 
+
+A neutral, open-source home for the standards, reference implementations, and live proofs at the intersection of AI agents and blockchain. The defining promise: every claim here is independently checkable from public data — a stranger can re-derive it without trusting anyone.
 
 Each layer defends one invariant and hands a reference to the next. The whole chain re-verifies
 from public data.
