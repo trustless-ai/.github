@@ -49,6 +49,29 @@ instead of diluting it.
 - **Losses retained.** Where a repo publishes a track record, it publishes failures too — a record
   that only shows wins isn't recomputable, it's marketing.
 
+## Write the limits first
+
+**Every spec, note and reference impl ships a section stating what it does _not_ establish — and
+that section is written before the thing it describes.**
+
+Written afterwards, you already know the result and you want it to have been worth something. The
+limits quietly narrow until they fit whatever was achieved, and the reader gets a summary of the
+outcome wearing the costume of a boundary. Written first, the same paragraph is a design
+constraint: it tells you which claims you are not allowed to make later, while giving them up
+still costs you nothing.
+
+The test is simple. **Could this section have been written before the work existed?** If not, it
+is describing what happened rather than bounding what is claimed, and it should be rewritten
+before the artifact ships.
+
+A limits section is not a disclaimer and not modesty. It is the part of the document that survives
+contact with someone who wants the claim to be bigger than it is — including, later, its own
+author.
+
+_This convention comes from Pavlo Tvardovskyi's TSEI external-authority protocol, whose §25 lists
+what a **successful** run still would not prove, written while no instance existed and no result
+could yet be wanted._
+
 ## Governance
 
 Owners listed on the org. Structural decisions (new shared deps, conventions, license) are made in
