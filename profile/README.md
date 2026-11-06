@@ -59,6 +59,10 @@ from public data.
 - **[`zkIE`](https://github.com/trustless-ai/zkIE)** — Zero-Knowledge Inference Engine. End-to-end
   proof generation for LLM inference: the trustless compute layer that turns a model's forward pass
   into a verifiable, recomputable proof.
+- **[`flashprove-onchain-verifier`](https://github.com/trustless-ai/flashprove-onchain-verifier)** —
+  on-chain verifier for FlashProve proofs, in two routes:
+  - **attestation (k-of-n)** — implemented by committee signatures over independent verifier runs.
+  - **zero-knowledge** — implemented by a no_std Rust verifier running in the SP1 zkVM.
 
 ### Recompute tooling
 - **[`recompute-kit`](https://github.com/trustless-ai/recompute-kit)** — the zero-dependency recompute scripts every repo's `recompute` / `verify`
