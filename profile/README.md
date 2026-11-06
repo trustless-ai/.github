@@ -1,7 +1,3 @@
-
-
-
-
 # trustless-ai
 
 **Let's build trustless AI — for everyone!**
@@ -23,7 +19,7 @@ AI multiplies human capability. But as it advances, the strongest models may soo
 
 ## Let's build it — with talents and believers
 
-- **Say hi on [Telegram](#)** — brainstorm, share ideas, and meet like-minded builders. No commitment needed — just come chat.
+- **Say hi on [Telegram](https://t.me/+P7blHRwexzAyYWZh)** — brainstorm, share ideas, and meet like-minded builders. No commitment needed — just come chat.
 - **Grow with a project** — follow one that interests you, learn as it evolves, and step in whenever ready: open an issue, spot a bug, send a PR. Every contribution counts, and we'll review and respond as fast as we can.
 - **Start your own** — have an idea that fits the vision? We'll create a repo under the org and hand you full control. Your project, your lead — we're here to support.
 
@@ -50,25 +46,28 @@ from public data.
 
 ## Repos
 
-- **[`.github`](https://github.com/trustless-ai/.github)** — this front door: boundary-chain map,
-  contribution guide, community health files.
-- **`agent-ercs`** — production-grade, versioned, audited ERC contracts. The shared **on-chain**
+### Standards & contracts
+- **[`agent-ercs`](https://github.com/trustless-ai/agent-ercs)** — production-grade, versioned, audited ERC contracts. The shared **on-chain**
   dependency you import and pin. Think OpenZeppelin for AI-agent infrastructure.
-- **`agent-sdk`** — the shared **off-chain** verify/recompute tooling. One
+
+### Client & calling layer
+- **[`agent-sdk`](https://github.com/trustless-ai/agent-sdk)** — the shared **off-chain** verify/recompute tooling. One
   `npm install @trustless-ai/agent-sdk`, one consistent API to check every layer's claims. A thin,
   transparent wrapper over zero-dependency recompute scripts that remain the trust anchor.
-- **`agent-contracts-examples`** — minimal, runnable quickstarts using `agent-ercs` + `agent-sdk`.
-- **Project repos** — `ccip-router`, `ConsultEscrow`, and whatever each layer author brings: the
-  fast-moving, opinionated implementations that prove the stack in production. Registered:
-  - **[`ccip-router`](https://github.com/trustless-ai/ccip-router)** — CCIP-Read gateway mesh (peer
-    sync, signed records, on-chain attestation); reference impl of the *Gateway Mesh Sync Protocol*
-    ERC. *Verify:* recompute any attestation trustlessly via the live `WyriweProofVerifier` (ERC-8274,
-    Sepolia) — no node in the loop.
-  - **[`hack-ens-recovery`](https://github.com/TMerlini/hack-ens-recovery)** — owner-bound, verifiable
-    recovery agent: WYRIWE commit-before-outcome receipt → on-chain BIP-340 verify (no oracle) →
-    owner-bound escrow with a replay nullifier. Composes 8004/8263/8274/8275/8281/8299/8301 on a real
-    use case. *Verify:* `cd contracts && forge test` (incl. all 15 official BIP-340 vectors); live on
-    Sepolia, full fee-release proven on-chain. `BIP340.sol` flagged pre-mainnet-audit.
+
+### Model inference verification
+- **[`zkIE`](https://github.com/trustless-ai/zkIE)** — Zero-Knowledge Inference Engine. End-to-end
+  proof generation for LLM inference: the trustless compute layer that turns a model's forward pass
+  into a verifiable, recomputable proof.
+
+### Recompute tooling
+- **[`recompute-kit`](https://github.com/trustless-ai/recompute-kit)** — the zero-dependency recompute scripts every repo's `recompute` / `verify`
+  step builds on; the trust anchor a stranger re-derives from public data.
+
+### Agent contracts test harness
+- **[`verifiable-execution-claim-authorization`](https://github.com/trustless-ai/verifiable-execution-claim-authorization)** —
+  research on guarantee preservation across verifiable AI inference, attestations, execution
+  receipts, and downstream claims.
 
 ## The one rule
 
